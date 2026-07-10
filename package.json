@@ -1,0 +1,21 @@
+{
+  "name": "brennan.click",
+  "version": "1.0.0",
+  "description": "A wiki-linked digital commonplace book | sister site to brennan.day.",
+  "private": true,
+  "scripts": {
+    "build": "eleventy && npm run stubs && eleventy",
+    "stubs": "node scripts/generate-stubs.mjs",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@photogabble/eleventy-plugin-interlinker": "^1.1.2",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0"
+  }
+}
