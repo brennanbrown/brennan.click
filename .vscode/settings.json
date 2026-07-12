@@ -1,0 +1,19 @@
+{
+  // Keep Foam's graph, backlinks, and placeholder panels scoped to the
+  // actual note corpus, not build output or scaffolding.
+  "foam.files.exclude": [
+    "_site/**/*",
+    "node_modules/**/*",
+    "src/inbox/**/*"
+  ],
+  // Wikilinks in this repo are already extensionless slugs (see
+  // src/notes/*.md); keep Foam's generated link-reference definitions
+  // consistent by not adding the .md suffix.
+  "foam.edit.linkReferenceDefinitions": "withoutExtensions",
+  "files.exclude": {
+    "**/_site": true
+  },
+  "files.watcherExclude": {
+    "**/_site/**": true
+  }
+}
