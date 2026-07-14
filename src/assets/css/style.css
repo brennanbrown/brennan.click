@@ -1,0 +1,306 @@
+/* brennan.click design system. */
+
+:root {
+  --bg: #fbf1c7;
+  --fg: #3c3836;
+  --muted: #7c6f64;
+  --panel: #f2e5bc;
+  --border: #d5c4a1;
+  --accent-primary: #af3a03;
+  --link: #076678;
+
+  --sym-quote: #9d0006;
+  --sym-bookmark: #b57614;
+  --sym-note: #427b58;
+  --sym-diary: #076678;
+  --sym-snippet: #8f3f71;
+  --sym-stub: #7c6f64;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #282828;
+    --fg: #ebdbb2;
+    --muted: #a89984;
+    --panel: #32302f;
+    --border: #504945;
+    --accent-primary: #fe8019;
+    --link: #83a598;
+
+    --sym-quote: #fb4934;
+    --sym-bookmark: #fabd2f;
+    --sym-note: #b8bb26;
+    --sym-diary: #83a598;
+    --sym-snippet: #d3869b;
+    --sym-stub: #a89984;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+main {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+header,
+footer {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  border-bottom: 2px solid var(--border);
+}
+
+footer {
+  border-top: 2px solid var(--border);
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--panel);
+  border: 2px solid var(--accent-primary);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+a {
+  color: var(--link);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--muted);
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-style: solid;
+  color: var(--bg);
+  background-color: var(--accent-primary);
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  border-left: 4px solid var(--border);
+  color: var(--muted);
+}
+
+pre,
+code {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+    'DejaVu Sans Mono', monospace;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.1em 0.3em;
+}
+
+pre code {
+  border: none;
+  padding: 0;
+}
+
+/* --- Symbol taxonomy --- */
+
+.sym {
+  font-weight: bold;
+  margin-right: 0.35em;
+}
+
+.sym--quote {
+  color: var(--sym-quote);
+}
+
+.sym--bookmark {
+  color: var(--sym-bookmark);
+}
+
+.sym--note {
+  color: var(--sym-note);
+}
+
+.sym--diary {
+  color: var(--sym-diary);
+}
+
+.sym--snippet {
+  color: var(--sym-snippet);
+}
+
+.sym--stub {
+  color: var(--sym-stub);
+}
+
+/* --- Page metadata line --- */
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-bottom: 1.5rem;
+}
+
+.meta>*+*::before {
+  content: " · ";
+}
+
+/* --- Links section (forward/back) --- */
+
+.links-section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--border);
+  font-size: 0.9em;
+}
+
+.links-section dt {
+  color: var(--muted);
+  font-weight: bold;
+}
+
+.links-section dd {
+  margin: 0 0 0.75rem 0;
+}
+
+/* --- Footnotes: pure CSS hover reveal --- */
+
+.fn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fn-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: max-content;
+  max-width: 30ch;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-size: 0.85em;
+  text-align: left;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.fn-wrapper:hover .fn-content,
+.fn-wrapper:focus-within .fn-content {
+  display: block;
+}
+
+.fn-content sup {
+  display: none;
+}
+
+/* --- Transclusion: hover preview excerpts --- */
+
+.wikilink-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.wikilink-preview {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: max-content;
+  max-width: 30ch;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  font-size: 0.85em;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.wikilink-wrapper:hover .wikilink-preview,
+.wikilink-wrapper:focus-within .wikilink-preview {
+  display: block;
+}
+
+/* --- Homepage: notes grouped by type --- */
+
+.type-section {
+  margin-top: 2rem;
+}
+
+.type-section h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entry-list li {
+  padding: 0.25rem 0;
+}
+
+/* --- Utility --- */
+
+.word-count::after {
+  content: " words";
+}
