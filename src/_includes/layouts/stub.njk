@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <h1>
+    <span class="sym sym--stub">☉</span>
+    {{ title }}
+  </h1>
+  <p class="meta">
+    <span>stub</span>
+  </p>
+  <p><em>Nothing here yet.</em></p>
+
+  {% if backlinks.length %}
+  <div class="links-section">
+    <dl>
+      <dt>Linked from</dt>
+      <dd>
+        {% for link in backlinks %}<a href="{{ link.url }}">{{ link.title }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+      </dd>
+    </dl>
+  </div>
+  {% endif %}
+</article>

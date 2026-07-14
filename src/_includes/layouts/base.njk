@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Brennan Brown's personal website and digital garden">
+        <meta name="author" content="Brennan Brown">
+        <meta name="robots" content="index, follow">
+        <title>{{ title }}
+            {% if title != "brennan.click" %}: brennan.click{% endif %}
+        </title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+        <link rel="icon" href="/assets/favicon/favicon.ico">
+        <meta property="og:title" content="{{ title }}{% if title != 'brennan.click' %}: brennan.click{% endif %}">
+        <meta property="og:description" content="Brennan Brown's personal website and digital garden">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://brennan.click{{ page.url }}">
+        <meta property="og:image" content="https://brennan.click/assets/favicon/android-chrome-512x512.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="{{ title }}{% if title != 'brennan.click' %}: brennan.click{% endif %}">
+        <meta name="twitter:description" content="Brennan Brown's personal website and digital garden">
+        <meta name="twitter:image" content="https://brennan.click/assets/favicon/android-chrome-512x512.png">
+        <link rel="canonical" href="https://brennan.click{{ page.url }}">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header>
+            {% include "partials/header.njk" %}
+        </header>
+        <main id="main">
+            {{ content | safe }}
+        </main>
+        <footer>
+            {% include "partials/footer.njk" %}
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+  <h1>
+    {% set sym = symbols[type] %}
+    {% if sym %}
+      <span class="sym {{ sym.class }}">{{ sym.symbol }}</span>
+    {% endif %}
+    {{ title }}
+  </h1>
+  <p class="meta">
+    {% if type == "stub" %}
+      <span>stub</span>
+    {% else %}
+      <span class="word-count">{{ content | wordCount }}</span>
+      <span>{{ date | dateDisplay }}</span>
+      <span>{{ type }}</span>
+    {% endif %}
+  </p>
+  {% if type == "stub" %}
+    <p>
+      <em>Nothing here yet.</em>
+    </p>
+  {% else %}
+    {{ content | safe }}
+  {% endif %}
+  {% set forward = content | forwardLinks %}
+  {% if forward.length or backlinks.length %}
+    <div class="links-section">
+      <dl>
+        {% if forward.length %}
+          <dt>Links to</dt>
+          <dd>
+            {% for link in forward %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+              {% if not loop.last %}
+                ·
+              {% endif %}
+            {% endfor %}
+          </dd>
+        {% endif %}
+        {% if backlinks.length %}
+          <dt>Linked from</dt>
+          <dd>
+            {% for link in backlinks %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+              {% if not loop.last %}
+                ·
+              {% endif %}
+            {% endfor %}
+          </dd>
+        {% endif %}
+      </dl>
+    </div>
+  {% endif %}
+</article>
