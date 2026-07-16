@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: brennan.click
+---
+
+<h1>brennan.click</h1>
+<p>A wiki-linked digital commonplace book. A sister site to
+  <a href="https://brennan.day">brennan.day</a>.</p>
+<blockquote>
+  <p>A garden is a collection of evolving ideas that aren't strictly organised by their publication date. They're
+    inherently exploratory—notes are linked through contextual associations. They aren't refined or complete—notes are
+    published as half-finished thoughts that will grow and evolve over time. They're less rigid, less performative, and less
+    perfect than the personal websites we're used to seeing.</p>
+  <cite>—
+    <a href="https://maggieappleton.com/garden-history">Maggie Appleton</a>
+  </cite>
+</blockquote>
+{% for type, sym in symbols %}
+  {% set entries = collections["type_" + type] %}
+  {% if entries.length %}
+    <section class="type-section">
+      <h2>
+        <span class="sym {{ sym.class }}">{{ sym.symbol }}</span>
+        {{ sym.label | capitalize }}
+        {%- if entries.length != 1 %}s{% endif -%}
+      </h2>
+      <ul class="entry-list">
+        {% for note in entries | reverse %}
+          <li>
+            <a href="{{ note.url }}">{{ note.data.title }}</a>
+            <span class="meta">{{ note.date | dateDisplay }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endfor %}
+{% if not collections.notesAll.length %}
+  <p>
+    <em>No entries yet.</em>
+  </p>
+{% endif %}
