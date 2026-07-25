@@ -5,6 +5,7 @@ symbol: "⚹"
 date: 2026-07-24
 source_url: https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode
 tags: [editor, vscode]
+themes: [aries, jupiter]
 ---
 
 Foam is a VSCode extension for markdown-based personal knowledge bases: wikilinks, backlinks panel, graph visualization, orphan and placeholder panels. Read from the same flat `src/notes/*.md` files this site already builds from. 

@@ -4,6 +4,7 @@ type: snippet
 symbol: "🜃"
 date: 2026-07-24
 tags: [css]
+themes: [venus, aries]
 ---
 
 The trick behind [[values|the footnotes on this site]] and the hover previews in notes like [[colour-theory]] is the same adjacent-hover pattern, just with different content in the hidden span. It's [AetherAnne's pattern](https://aetheranne.ca/blog/tutorials/how-to-display-footnotes-on-hover-without-javascript/) for footnotes without JavaScript, wired through `markdown-it`'s renderer overrides here instead of hand-written HTML:

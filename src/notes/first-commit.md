@@ -4,6 +4,7 @@ type: diary
 symbol: "🜁"
 date: 2026-07-24
 tags: []
+themes: [aries, leo]
 ---
 
 Hello, world! This is my attempt of creating scaffolding for a digital garden. I'm cautiously optimistic.

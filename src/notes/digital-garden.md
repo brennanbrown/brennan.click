@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [meta, pkm]
+themes: [cancer, gemini]
 ---
 
 A digital garden is a website that grows in public instead of publishing in the finished, dated-post format of a blog. Entries get revised in place, start rough and get filled in over time, and are organized by association rather than chronology. This site is one, in the same family as the older [[commonplace-book|commonplace book]] tradition and the note-linking discipline of a [[zettelkasten]].

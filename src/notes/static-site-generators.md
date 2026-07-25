@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [11ty, meta]
+themes: [aries, scorpio]
 ---
 
 A static site generator takes markdown and templates and compiles them into plain HTML files with no server-side code and no database. For a [[digital-garden|digital garden]] that's meant to be worked on continuously, the boring reliability is a great asset.

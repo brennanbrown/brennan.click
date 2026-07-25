@@ -5,6 +5,7 @@ symbol: "⚹"
 date: 2026-07-24
 source_url: https://github.com/photogabble/eleventy-plugin-interlinker
 tags: [11ty]
+themes: [aries, scorpio]
 ---
 
 Obsidian-style wikilinks, backlinks, and embeds for Eleventy. Used for both dead-link reporting and stub-generation.

@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [css, meta]
+themes: [venus, aries]
 ---
 
 Transclusion is including a document's content inside another by reference, rather than by copy, so the excerpt is from the source. Don't repeat yourself!

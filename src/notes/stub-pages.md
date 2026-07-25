@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [meta, wiki]
+themes: [cancer, aries]
 ---
 
 A problem that wiki-linked [[digital-garden|digital garden]] run into is figuring out what happens when you reference a note that doesn't exist on disk yet. 

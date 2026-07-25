@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [pkm, history]
+themes: [cancer, gemini]
 ---
 
 Niklas Luhmann kept a slip-box of roughly 90,000 index cards over his working life, each one a single idea, each one cross-referenced to others by hand-written note numbers. He credited it, half-jokingly, with most of his output as a sociologist. 

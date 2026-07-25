@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [beeminder, github]
+themes: [aries, sagittarius]
 ---
 
 My old `/github` [[beeminder|Beeminder]] goal tracked commits across every repository on GitHub, until GitHub's API changed to only allow tracking one repository at a time. Most active projects had already moved to GitLab and Source.tube anyway.

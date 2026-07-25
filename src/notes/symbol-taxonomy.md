@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [meta, gruvbox]
+themes: [venus, cancer]
 ---
 
 I'm using single-character symbols, one per `type` as a quick visual cue:

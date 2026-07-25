@@ -3,6 +3,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [meta]
+themes: [cancer, aries]
 ---
 
 The first entry. This site exists for [[gitminder]] as the daily-commit driver for [[beeminder|two Beeminder goals]], and it leans on wiki-links ,like [[colour-theory]] to connect ideas as they accumulate, in the tradition of a [[digital-garden|digital garden]] more than a blog.[^1]

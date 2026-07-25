@@ -5,6 +5,7 @@ symbol: "⚹"
 date: 2026-07-24
 source_url: https://www.beeminder.com
 tags: [habits]
+themes: [aries, sagittarius]
 ---
 
 A commitment device: set a numeric goal, draw a yellow brick road toward it on a graph, and pay real money if you fall off. The two goals riding on this repo, one on commit count and one on cumulative word count via `/urlminder.txt`, are both Beeminder goals, and both exist because [[gitminder|the old commit tracker]] stopped working and something had to replace it.

@@ -4,6 +4,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [pkm, history]
+themes: [gemini, cancer]
 ---
 
 Long before "[[digital-garden|digital garden]]" was a term, readers kept commonplace books: bound notebooks of quotations, observations, and excerpts copied out by hand, organized under personal headings so they could be found again later. John Locke published an indexing method for his own in 1706. 

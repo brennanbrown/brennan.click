@@ -3,6 +3,7 @@ type: note
 symbol: ●
 date: 2026-07-24
 tags: [gruvbox, css]
+themes: [venus, aries]
 ---
 
 Gruvbox's rainbow accent set doubles as the symbol taxonomy's colour legend, see [[values]] for the entry that started this.
