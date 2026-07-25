@@ -17,6 +17,16 @@ layout: layouts/base.njk
       <span class="word-count">{{ content | wordCount }}</span>
       <span>{{ date | dateDisplay }}</span>
       <span>{{ type }}</span>
+      {% if themes and themes.length %}
+        <span class="themes">
+          {% for slug in themes %}
+            {% set cat = categories[slug] %}
+            {% if cat %}
+              <a class="theme-symbol {{ cat.color }}" href="/category/{{ slug }}/" title="{{ cat.label }}">{{ cat.symbol }}</a>
+            {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
     {% endif %}
   </p>
   {% if type == "stub" %}
