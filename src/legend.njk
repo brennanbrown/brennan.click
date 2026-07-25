@@ -5,57 +5,107 @@ title: Legend
 
 <h1>Legend</h1>
 <p>Symbol taxonomy based on my writing on
-  <a href="https://brennan.day/blogging-with-magic-unicode-simple-doesnt-have-to-mean-boring/">ASCII characters</a>.</p>
+    <a href="https://brennan.day/blogging-with-magic-unicode-simple-doesnt-have-to-mean-boring/">ASCII characters</a>.</p>
 <table>
-  <thead>
-    <tr>
-      <th>Symbol</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <span class="sym sym--quote">&gt;</span>
-      </td>
-      <td>Quote</td>
-      <td>Passages worth remembering</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="sym sym--bookmark">⚹</span>
-      </td>
-      <td>Bookmark</td>
-      <td>Links to external resources</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="sym sym--note">●</span>
-      </td>
-      <td>Note</td>
-      <td>Longer-form ideas and concepts</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="sym sym--diary">🜁</span>
-      </td>
-      <td>Diary</td>
-      <td>Personal logs and reflections</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="sym sym--snippet">🜃</span>
-      </td>
-      <td>Snippet</td>
-      <td>Code and technical notes</td>
-    </tr>
-    <tr>
-      <td>
-        <span class="sym sym--stub">☉</span>
-      </td>
-      <td>Stub</td>
-      <td>Placeholder pages for future development</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <span class="sym sym--quote">&gt;</span>
+            </td>
+            <td>Quote</td>
+            <td>Passages worth remembering</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="sym sym--bookmark">⚹</span>
+            </td>
+            <td>Bookmark</td>
+            <td>Links to external resources</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="sym sym--note">●</span>
+            </td>
+            <td>Note</td>
+            <td>Longer-form ideas and concepts</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="sym sym--diary">🜁</span>
+            </td>
+            <td>Diary</td>
+            <td>Personal logs and reflections</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="sym sym--snippet">🜃</span>
+            </td>
+            <td>Snippet</td>
+            <td>Code and technical notes</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="sym sym--stub">☉</span>
+            </td>
+            <td>Stub</td>
+            <td>Placeholder pages for future development</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Categories &amp; Themes</h2>
+<p>A second, orthogonal taxonomy: what a note is
+    <em>about</em>, not what it
+    <em>is</em>. Optional, click a symbol to see every note tagged with it.</p>
+<h3>Thematic Categories</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Theme</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category in categoryList %}
+            {% if category.group == "zodiac" %}
+                <tr>
+                    <td>
+                        <a class="theme-symbol {{ category.color }}" href="/category/{{ category.slug }}/">{{ category.symbol }}</a>
+                    </td>
+                    <td>{{ category.label }}</td>
+                    <td>{{ category.description }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+<h3>Technology Subcategories</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Theme</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category in categoryList %}
+            {% if category.group == "planet" %}
+                <tr>
+                    <td>
+                        <a class="theme-symbol {{ category.color }}" href="/category/{{ category.slug }}/">{{ category.symbol }}</a>
+                    </td>
+                    <td>{{ category.label }}</td>
+                    <td>{{ category.description }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
 </table>
