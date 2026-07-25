@@ -15,6 +15,15 @@
   --sym-diary: #076678;
   --sym-snippet: #8f3f71;
   --sym-stub: #7c6f64;
+
+  --nav-red: #9d0006;
+  --nav-orange: #af3a03;
+  --nav-yellow: #b57614;
+  --nav-green: #79740e;
+  --nav-blue: #076678;
+  --nav-purple: #8f3f71;
+  --nav-magenta: #b16286;
+  --nav-gray: #7c6f64;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +42,15 @@
     --sym-diary: #83a598;
     --sym-snippet: #d3869b;
     --sym-stub: #a89984;
+
+    --nav-red: #cc241d;
+    --nav-orange: #fe8019;
+    --nav-yellow: #fabd2f;
+    --nav-green: #98971a;
+    --nav-blue: #458588;
+    --nav-purple: #b16286;
+    --nav-magenta: #d387d8;
+    --nav-gray: #928374;
   }
 }
 
@@ -180,6 +198,52 @@ pre code {
 
 .sym--stub {
   color: var(--sym-stub);
+}
+
+/* --- Category / theme taxonomy (clickable symbols, see src/_data/categories.js) --- */
+
+.theme-symbol {
+  display: inline-block;
+  margin-right: 0.25em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.theme-symbol:hover,
+.theme-symbol:focus-visible {
+  text-decoration: none;
+}
+
+.nav-red {
+  color: var(--nav-red);
+}
+
+.nav-orange {
+  color: var(--nav-orange);
+}
+
+.nav-yellow {
+  color: var(--nav-yellow);
+}
+
+.nav-green {
+  color: var(--nav-green);
+}
+
+.nav-blue {
+  color: var(--nav-blue);
+}
+
+.nav-purple {
+  color: var(--nav-purple);
+}
+
+.nav-magenta {
+  color: var(--nav-magenta);
+}
+
+.nav-gray {
+  color: var(--nav-gray);
 }
 
 /* --- Page metadata line --- */
