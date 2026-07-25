@@ -156,7 +156,10 @@ export default function (eleventyConfig) {
   // src/notes/notes.11tydata.js, scoped to that directory only, so it
   // doesn't clobber other templates' own permalinks (e.g. urlminder.txt).
   eleventyConfig.addGlobalData("eleventyComputed", {
-    title: (data) => data.title || titleCase(data.page.fileSlug || ""),
+    title: (data) =>
+      data.title ||
+      (data.category && data.category.label) ||
+      titleCase(data.page.fileSlug || ""),
   });
 
   // ---------------------------------------------------------------------
@@ -189,6 +192,12 @@ export default function (eleventyConfig) {
     const d = new Date(date);
     return d.toISOString().split("T")[0];
   });
+
+  // Category/theme archive pages (src/category.njk): every note whose
+  // `themes` frontmatter array includes the given category slug.
+  eleventyConfig.addFilter("filterByTheme", (notes, slug) =>
+    (notes || []).filter((note) => (note.data.themes || []).includes(slug))
+  );
 
   // ---------------------------------------------------------------------
   // Collections: `type` frontmatter doubles as an 11ty tag (§2.3)
