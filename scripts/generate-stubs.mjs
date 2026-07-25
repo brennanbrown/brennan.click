@@ -22,10 +22,14 @@ if (!fs.existsSync(reportPath)) {
 
 const raw = JSON.parse(fs.readFileSync(reportPath, "utf8"));
 
-// interlinker's `.dead-links.json` is a map of `{ "[[wikilink]]": [sourceFiles] }`.
+// interlinker's `.dead-links.json` maps dead-link text to source files, but
+// it isn't limited to `[[wikilink]]` syntax; it can also report ordinary
+// broken internal links (see docs/SPEC.md §3). Only `[[wikilink]]`-style
+// entries are ours to turn into stubs, so skip anything that doesn't match.
 // Pull the slug out of the raw wikilink syntax: strip `[[`/`]]`/`!`, drop any
 // `|alias` or `#anchor` suffix, then slugify.
 function extractSlug(rawLink) {
+  if (!/^!?\[\[.*]]$/.test(rawLink)) return null;
   const inner = rawLink.replace(/^!?\[\[/, "").replace(/]]$/, "");
   const name = inner.split("|")[0].split("#")[0].trim();
   if (!name) return null;
