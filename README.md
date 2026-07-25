@@ -40,11 +40,18 @@ symbol: ●           # Unicode character
 date: 2026-07-24
 tags: [gruvbox, css]
 source_url:         # for quote / bookmark entries
+themes: []          # optional, category/theme slugs, see src/_data/categories.js
 ---
 ```
 
 Filename = slug = title parity: `notes/values.md` → `/values/` → title
 "Values."
+
+`type` is what an entry *is*; `themes` is what it's *about*, an optional
+second, orthogonal taxonomy (`src/_data/categories.js`, zodiac symbols for
+broad subjects and planetary symbols for technology subcategories). Each
+theme renders as a small clickable symbol on the note, linking to a
+`/category/<slug>/` archive page of every note sharing that theme.
 
 ## 4. Wiki-links, backlinks, stubs
 
