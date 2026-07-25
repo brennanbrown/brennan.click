@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: categoryList
+  size: 1
+  alias: category
+  addAllPagesToCollections: true
+permalink: "/category/{{ category.slug }}/"
+eleventyExcludeFromCollections: true
+---
+
+<h1>
+  <span class="sym theme-symbol {{ category.color }}">{{ category.symbol }}</span>
+  {{ category.label }}
+</h1>
+<p class="meta">
+  <span>{{ category.description }}</span>
+</p>
+{% set matches = collections.notesAll | filterByTheme(category.slug) %}
+{% if matches.length %}
+  <ul class="entry-list">
+    {% for note in matches | reverse %}
+      <li>
+        <span class="sym {{ symbols[note.data.type].class }}">{{ symbols[note.data.type].symbol }}</span>
+        <a href="{{ note.url }}">{{ note.data.title }}</a>
+        <span class="meta">{{ note.date | dateDisplay }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>
+    <em>No entries tagged with this theme yet.</em>
+  </p>
+{% endif %}
