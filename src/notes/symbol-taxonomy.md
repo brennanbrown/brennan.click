@@ -22,6 +22,8 @@ I'm using plain Unicode over emoji because they're stylable with CSS, consistent
 
 You can read more about this idea [here](https://brennan.day/blogging-with-magic-unicode-simple-doesnt-have-to-mean-boring/).The color part of the system is in [[colour-theory]].
 
+This only covers `type`. What a note is *about* is a separate system, see [[theme-symbols]].
+
 Placeholder, not final: the specific symbols above are a first draft.
 
 [on-writing-daily]: on-writing-daily "On Writing Daily"
@@ -31,3 +33,4 @@ Placeholder, not final: the specific symbols above are a first draft.
 [css-hover-footnote]: css-hover-footnote "CSS Hover Footnote"
 [bearminder]: bearminder "bearminder"
 [colour-theory]: colour-theory "colour-theory"
+[theme-symbols]: theme-symbols "Theme Symbols"
