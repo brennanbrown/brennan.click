@@ -13,8 +13,13 @@ Gardens link inward to their own other entries. Every [[bearminder|dead link]] i
 
 See [[static-site-generators]] for why 11ty specifically, and [[stub-pages]] for the mechanism that keeps the garden's edges from ever going dead.
 
+None of this works without good hygiene. Keep entries [[atomic-notes|atomic]] and titled sharply, per [[evergreen-note-titles]], and once a cluster gets big enough, build a [[maps-of-content|map of content]] rather than a folder.
+
 [commonplace-book|commonplace book]: commonplace-book "Commonplace Book"
 [zettelkasten]: zettelkasten "Zettelkasten"
 [bearminder|dead link]: bearminder "bearminder"
 [static-site-generators]: static-site-generators "Static Site Generators"
 [stub-pages]: stub-pages "Stub Pages"
+[atomic-notes|atomic]: atomic-notes "Atomic Notes"
+[evergreen-note-titles]: evergreen-note-titles "Evergreen Note Titles"
+[maps-of-content|map of content]: maps-of-content "Maps of Content"
