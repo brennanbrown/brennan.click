@@ -11,7 +11,7 @@
 export default {
   aries: {
     slug: "aries",
-    symbol: "♈",
+    symbol: "♈︎",
     label: "Technology & Web",
     description: "Web development, internet culture, digital tools",
     color: "nav-red",
@@ -19,7 +19,7 @@ export default {
   },
   taurus: {
     slug: "taurus",
-    symbol: "♉",
+    symbol: "♉︎",
     label: "Social Justice & Politics",
     description: "Political analysis, social movements, justice issues",
     color: "nav-orange",
@@ -27,7 +27,7 @@ export default {
   },
   gemini: {
     slug: "gemini",
-    symbol: "♊",
+    symbol: "♊︎",
     label: "Arts & Culture",
     description: "Literature, music, visual arts, cultural criticism",
     color: "nav-yellow",
@@ -35,7 +35,7 @@ export default {
   },
   cancer: {
     slug: "cancer",
-    symbol: "♋",
+    symbol: "♋︎",
     label: "Philosophy & Ideas",
     description: "Philosophical concepts, theoretical frameworks",
     color: "nav-green",
@@ -43,7 +43,7 @@ export default {
   },
   leo: {
     slug: "leo",
-    symbol: "♌",
+    symbol: "♌︎",
     label: "Personal Development",
     description: "Self-improvement, mental health, wellness",
     color: "nav-blue",
@@ -51,7 +51,7 @@ export default {
   },
   virgo: {
     slug: "virgo",
-    symbol: "♍",
+    symbol: "♍︎",
     label: "Science & Research",
     description: "Academic research, scientific studies, data",
     color: "nav-purple",
@@ -59,7 +59,7 @@ export default {
   },
   libra: {
     slug: "libra",
-    symbol: "♎",
+    symbol: "♎︎",
     label: "Writing Craft",
     description: "Writing techniques, creative process, publishing",
     color: "nav-magenta",
@@ -67,7 +67,7 @@ export default {
   },
   scorpio: {
     slug: "scorpio",
-    symbol: "♏",
+    symbol: "♏︎",
     label: "Education & Learning",
     description:
       "Education, teaching, tutorials, documentation, libraries, learning resources",
@@ -76,7 +76,7 @@ export default {
   },
   sagittarius: {
     slug: "sagittarius",
-    symbol: "♐",
+    symbol: "♐︎",
     label: "Productivity",
     description: "Productivity systems, workflows, organization",
     color: "nav-orange",
@@ -84,7 +84,7 @@ export default {
   },
   capricorn: {
     slug: "capricorn",
-    symbol: "♑",
+    symbol: "♑︎",
     label: "System Tools",
     description: "Operating systems, utilities, infrastructure",
     color: "nav-yellow",
@@ -92,7 +92,7 @@ export default {
   },
   aquarius: {
     slug: "aquarius",
-    symbol: "♒",
+    symbol: "♒︎",
     label: "Community & Social",
     description: "Communities, social platforms, mutual aid",
     color: "nav-green",
@@ -100,7 +100,7 @@ export default {
   },
   pisces: {
     slug: "pisces",
-    symbol: "♓",
+    symbol: "♓︎",
     label: "Mental Health & Wellness",
     description: "Psychology, therapy, emotional well-being",
     color: "nav-blue",
@@ -108,7 +108,7 @@ export default {
   },
   moon: {
     slug: "moon",
-    symbol: "☽",
+    symbol: "☽︎",
     label: "Web Infrastructure & Hosting",
     description: "Hosting platforms, CDNs, domains, DNS, web servers, deployment",
     color: "nav-gray",
@@ -116,7 +116,7 @@ export default {
   },
   mercury: {
     slug: "mercury",
-    symbol: "☿",
+    symbol: "☿︎",
     label: "APIs & Integration",
     description: "APIs, webhooks, integrations, microservices, data exchange",
     color: "nav-red",
@@ -124,7 +124,7 @@ export default {
   },
   venus: {
     slug: "venus",
-    symbol: "♀",
+    symbol: "♀︎",
     label: "Design & UX",
     description: "UI/UX design, CSS, accessibility, visual design, user experience",
     color: "nav-orange",
@@ -132,7 +132,7 @@ export default {
   },
   mars: {
     slug: "mars",
-    symbol: "♂",
+    symbol: "♂︎",
     label: "Security & Privacy",
     description: "Encryption, security tools, privacy, authentication, cybersecurity",
     color: "nav-yellow",
@@ -140,7 +140,7 @@ export default {
   },
   jupiter: {
     slug: "jupiter",
-    symbol: "♃",
+    symbol: "♃︎",
     label: "Large Platforms & Services",
     description: "Major platforms (GitHub, GitLab), social networks, large-scale services",
     color: "nav-green",
@@ -148,7 +148,7 @@ export default {
   },
   saturn: {
     slug: "saturn",
-    symbol: "♄",
+    symbol: "♄︎",
     label: "Legacy Systems & Maintenance",
     description: "Legacy code, maintenance, refactoring, technical debt, system updates",
     color: "nav-blue",
@@ -156,7 +156,7 @@ export default {
   },
   uranus: {
     slug: "uranus",
-    symbol: "♅",
+    symbol: "♅︎",
     label: "Emerging Tech & Innovation",
     description: "AI, machine learning, blockchain, Web3, emerging technologies",
     color: "nav-purple",
@@ -164,7 +164,7 @@ export default {
   },
   neptune: {
     slug: "neptune",
-    symbol: "♆",
+    symbol: "♆︎",
     label: "Data & Analytics",
     description: "Data science, analytics, databases, statistics, data visualization",
     color: "nav-magenta",
@@ -172,7 +172,7 @@ export default {
   },
   pluto: {
     slug: "pluto",
-    symbol: "♇",
+    symbol: "♇︎",
     label: "Infrastructure & DevOps",
     description: "DevOps, CI/CD, infrastructure, containers, orchestration, automation",
     color: "nav-red",

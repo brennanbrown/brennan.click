@@ -160,7 +160,7 @@ pre,
 code {
   background: var(--panel);
   border: 1px solid var(--border);
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+  font-family: "Noto Sans Symbols 2", ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
     'DejaVu Sans Mono', monospace;
 }
 
@@ -183,6 +183,7 @@ pre code {
 .hljs {
   color: var(--fg);
   background: var(--panel);
+  font-variant-emoji: text;
 }
 
 .hljs-comment,
@@ -237,6 +238,8 @@ pre code {
 .hljs-symbol,
 .hljs-bullet {
   color: var(--nav-magenta);
+  font-variant-emoji: text;
+  font-family: "Noto Sans Symbols 2", ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 .hljs-built_in,
@@ -308,6 +311,8 @@ pre code {
   margin-right: 0.25em;
   font-weight: bold;
   text-decoration: none;
+  font-variant-emoji: text;
+  font-family: "Apple Symbols", "Noto Sans Symbols 2", "Segoe UI Symbol", "DejaVu Sans", sans-serif;
 }
 
 .theme-symbol:hover,
