@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
+import markdownItHighlightjs from "markdown-it-highlightjs";
 import matter from "gray-matter";
 import EleventyInterlinkerPlugin from "@photogabble/eleventy-plugin-interlinker";
 
@@ -69,7 +70,10 @@ export default function (eleventyConfig) {
   // ---------------------------------------------------------------------
   // Markdown-it: footnotes with a CSS-hover-friendly render override
   // ---------------------------------------------------------------------
-  const md = markdownIt({ html: true }).use(markdownItFootnote);
+  const md = markdownIt({ html: true }).use(markdownItFootnote).use(markdownItHighlightjs, {
+    auto: true,
+    code: true,
+  });
 
   // markdown-it-footnote assembles each footnote's rendered body at the very
   // end of the token stream (after `footnote_tail` runs), keyed only by

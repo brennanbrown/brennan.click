@@ -178,6 +178,94 @@ pre code {
   padding: 0;
 }
 
+/* --- Syntax highlighting (highlight.js) --- */
+
+.hljs {
+  color: var(--fg);
+  background: var(--panel);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: var(--accent-primary);
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: var(--nav-orange);
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: var(--nav-green);
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: var(--nav-blue);
+  font-weight: bold;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: var(--nav-yellow);
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: var(--nav-red);
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: var(--nav-purple);
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: var(--nav-magenta);
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: var(--nav-blue);
+}
+
+.hljs-meta {
+  color: var(--nav-gray);
+}
+
+.hljs-deletion {
+  background: var(--nav-red);
+  color: var(--bg);
+}
+
+.hljs-addition {
+  background: var(--nav-green);
+  color: var(--bg);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
 /* --- Symbol taxonomy --- */
 
 .sym {
