@@ -13,7 +13,7 @@ The server forks a process, passes the request in as environment variables and s
 
 No runtime or framework, nothing beyond that.
 
-See [[cgi-in-2026]] for whether it's still worth reaching for, and [[static-site-generators]] for the opposite end of the dynamic-content spectrum.
+See [[cgi-in-2026]] for whether it's still worth reaching for, [[static-site-generators]] for the opposite end of the dynamic-content spectrum, and [[tildeverse-guestbook]] for a practical non-web CGI use case.
 
 [cgi-in-2026]: cgi-in-2026 "CGI in 2026"
 [static-site-generators]: static-site-generators "Static Site Generators"
