@@ -75,7 +75,7 @@ This replaces an old habit of tracking daily word count through the now-defunct 
 
 The idea of the daily minimum contribution is to open `src/inbox/`, dump a thought with no frontmatter or formatting and commit.
 
-To publish properly: classify the fragment's `type`, assign a `symbol` from the taxonomy, write proper frontmatter, add `[[wikilinks]]` to anything that already exists as a note, and move it to `src/notes/<slug>.md`, then clear it out of the inbox. 
+To publish properly: classify the fragment's `type`, assign a `symbol` from the taxonomy, write proper frontmatter, add `[[wikilinks]]` to anything that already exists as a note, and move it to `src/notes/<slug>.md`, then clear it out of the inbox.
 
 ## 9. Known issues
 

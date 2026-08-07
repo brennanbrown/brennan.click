@@ -156,6 +156,29 @@ blockquote {
   color: var(--muted);
 }
 
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+th,
+td {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--panel);
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--panel);
+}
+
 pre,
 code {
   background: var(--panel);
