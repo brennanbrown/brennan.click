@@ -23,3 +23,4 @@ See [[minimal-cgi-script]] for the shape of the actual interface.
 
 [cgi-scripts|CGI]: cgi-scripts "CGI Scripts"
 [minimal-cgi-script]: minimal-cgi-script "Minimal CGI Script"
+[tildeverse-guestbook]: tildeverse-guestbook "Tildeverse Guestbook"
